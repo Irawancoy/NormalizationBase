@@ -14,14 +14,7 @@ import FooterComponent from '@/components/FooterComponents';
 const Page = () => {
   return (
     <>
-
       <HeaderComponent />
-    
-      {/* <Box className="page-footer">
-        <img src="/Footer.png" alt="" width="100%" height="50px" />
-      </Box> */}
-      <FooterComponent />
-
       <Box component="table" sx={{ width: '100%' }}>
         <Box component="thead">
           <Box component="tr">
@@ -75,6 +68,7 @@ const Page = () => {
           </Box>
         </Box>
       </Box>
+      <FooterComponent />
     </>
   );
 };

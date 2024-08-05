@@ -8,12 +8,7 @@
     width: 210mm;
   }
 
-  .page-header,
-  .page-footer,
-  .page-header-space,
-  .page-footer-space {
-    display: none;
-  }
+
 }
 
 @media print {
@@ -30,33 +25,6 @@
   }
 }
 
-.page-header,
-.page-header-space {
-  height: 100px;
-}
 
-.page-footer,
-.page-footer-space {
-  height: 50px;
-}
 
-.page-header,
-.page-footer {
-  position: fixed;
-  left: 0;
-  right: 0;
-}
 
-.page-header {
-  top: 0;
-}
-
-.page-footer {
-  bottom: 0;
-  margin-bottom: -5px;
-}
-
-.page-header {
-  background-color: #f0f0f0; /* Warna sementara untuk debugging */
-  border: 1px solid red; /* Border sementara untuk debugging */
-}
