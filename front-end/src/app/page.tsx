@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
-import { Avatar, Box, Chip, Divider, Stack, Table, TableBody, TableCell, TableHead, TableRow, Typography } from '@mui/material';
+import { Box, Divider, Stack, Typography } from '@mui/material';
 import { DATA } from '../../public/data';
 import HeaderComponent from '../components/HeaderComponent';
 import EmployeeInformation from '@/components/EmployeeInformationComponent';
@@ -16,14 +16,7 @@ const Page = () => {
     <>
       <HeaderComponent />
       <Box component="table" sx={{ width: '100%' }}>
-        <Box component="thead">
-          <Box component="tr">
-            <Box component="td">
-              <Box className="page-header-space" />
-            </Box>
-          </Box>
-        </Box>
-
+      
         <Box component="tbody">
           <Box component="tr">
             <Box
@@ -60,13 +53,7 @@ const Page = () => {
           </Box>
         </Box>
 
-        <Box component="tfoot">
-          <Box component="tr">
-            <Box component="td">
-              <Box className="page-footer-space" />
-            </Box>
-          </Box>
-        </Box>
+      
       </Box>
       <FooterComponent />
     </>
