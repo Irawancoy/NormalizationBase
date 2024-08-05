@@ -27,48 +27,6 @@
 
 
 
-.table-container {
-  width: 100%;
-}
-
-.table-cell {
-  padding: 16px 48px; /* py: 2, px: 6 */
-}
-
-.stack-column {
-  display: flex;
-  flex-direction: column;
-  gap: 8px; /* spacing={1} */
-  align-items: stretch;
-}
-
-.stack-row {
-  display: flex;
-  flex-direction: row;
-  gap: 8px; /* spacing={1} */
-  justify-content: stretch;
-}
-
-.flex-half {
-  flex-basis: 50%;
-  padding-bottom: 32px; /* pb: 4 */
-}
-
-.page-break {
-  padding-bottom: 16px; /* pb: 2 */
-  page-break-after: always;
-}
-
-.caption-text {
-  padding-top: 16px; /* pt: 4 */
-  color: gray;
-  text-align: center;
-}
-
-.divider-vertical {
-  border-left: 1px solid #e0e0e0; /* Adjust as needed */
-}
-
 
 
 
