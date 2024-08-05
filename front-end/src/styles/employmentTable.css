@@ -1,0 +1,17 @@
+.employment-table-cell {
+   padding: 0;
+ }
+ 
+ .employment-table-cell-strong {
+   font-weight: bold;
+ }
+ 
+ .employment-table-cell-caption {
+   display: block;
+ }
+ 
+ .employment-table-head-cell {
+   width: 50px;
+   padding: 0;
+ }
+ 

@@ -1,0 +1,17 @@
+.header-box {
+   margin-bottom: 40px; 
+   position: relative;
+ }
+ 
+ .header-img {
+   width: 100%;
+   height: 50px;
+ }
+ 
+ .header-logo {
+   height: 50px;
+   position: absolute;
+   left: 50px;
+   top: 50px;
+ }
+ 

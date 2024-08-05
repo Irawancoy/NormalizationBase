@@ -1,8 +1,10 @@
+import React from 'react';
 import { Box } from '@mui/material';
+import '../styles/footer.css';
 
 const FooterComponents = () => (
-  <Box >
-    <img src="/Footer.png" alt="Footer" width="100%" height="50px" />
+  <Box className="footer-box">
+    <img src="/Footer.png" alt="Footer" />
   </Box>
 );
 

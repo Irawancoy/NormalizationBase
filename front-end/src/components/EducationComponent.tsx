@@ -1,4 +1,6 @@
+import React from 'react';
 import { Stack, Table, TableBody, TableCell, TableHead, TableRow, Typography } from '@mui/material';
+import '../styles/education.css'
 
 interface Education {
   school: string;
@@ -13,15 +15,15 @@ interface EducationComponentProps {
 }
 
 const EducationComponent: React.FC<EducationComponentProps> = ({ education }) => (
-  <Stack direction="column" spacing={1} sx={{ flexBasis: '50%', pb: 4 }}>
-    <Typography variant="body1" sx={{ pt: 1 }}>
+  <Stack direction="column" spacing={1} className="education-stack">
+    <Typography variant="body1" className="education-typography">
       <strong>Education</strong>
     </Typography>
     <Table size="small">
       <TableHead>
         <TableRow>
           {['School', 'Degree', 'Subject', 'From', 'To'].map((o) => (
-            <TableCell key={o} sx={{ p: 0 }}>
+            <TableCell key={o} className="education-table-cell">
               <Typography variant="caption">
                 <strong>{o}</strong>
               </Typography>
@@ -32,19 +34,19 @@ const EducationComponent: React.FC<EducationComponentProps> = ({ education }) =>
       <TableBody>
         {education.map((o, i) => (
           <TableRow key={i}>
-            <TableCell sx={{ p: 0 }}>
+            <TableCell className="education-table-cell">
               <Typography variant="caption">{o.school}</Typography>
             </TableCell>
-            <TableCell sx={{ p: 0 }}>
+            <TableCell className="education-table-cell">
               <Typography variant="caption">{o.degree}</Typography>
             </TableCell>
-            <TableCell sx={{ p: 0 }}>
+            <TableCell className="education-table-cell">
               <Typography variant="caption">{o.subject}</Typography>
             </TableCell>
-            <TableCell sx={{ p: 0 }}>
+            <TableCell className="education-table-cell">
               <Typography variant="caption">{o.from}</Typography>
             </TableCell>
-            <TableCell sx={{ p: 0 }}>
+            <TableCell className="education-table-cell">
               <Typography variant="caption">{o.to}</Typography>
             </TableCell>
           </TableRow>

@@ -1,0 +1,13 @@
+.courses-training-stack {
+   flex-basis: 50%;
+   padding-bottom: 32px;
+ }
+ 
+ .courses-training-typography {
+   padding-top: 8px; 
+ }
+ 
+ .courses-training-table-cell {
+   padding: 0; 
+ }
+ 

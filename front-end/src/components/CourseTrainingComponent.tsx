@@ -1,4 +1,6 @@
+import React from 'react';
 import { Box, Divider, Stack, Table, TableBody, TableCell, TableHead, TableRow, Typography } from '@mui/material';
+import '../styles/courseTraining.css'
 
 interface Certification {
   title: string;
@@ -13,15 +15,15 @@ interface CoursesTrainingComponentProps {
 }
 
 const CoursesTrainingComponent: React.FC<CoursesTrainingComponentProps> = ({ certifications }) => (
-  <Stack direction="column" spacing={1} sx={{ flexBasis: '50%', pb: 4 }}>
-    <Typography variant="body1" sx={{ pt: 1 }}>
+  <Stack direction="column" spacing={1} className="courses-training-stack">
+    <Typography variant="body1" className="courses-training-typography">
       <strong>Course, Training</strong>
     </Typography>
     <Table size="small">
       <TableHead>
         <TableRow>
           {['Title', 'Provider', 'Date', 'Duration', 'Certificate'].map((o) => (
-            <TableCell key={o} sx={{ p: 0 }}>
+            <TableCell key={o} className="courses-training-table-cell">
               <Typography variant="caption">
                 <strong>{o}</strong>
               </Typography>
@@ -32,19 +34,19 @@ const CoursesTrainingComponent: React.FC<CoursesTrainingComponentProps> = ({ cer
       <TableBody>
         {certifications.map((o, i) => (
           <TableRow key={i}>
-            <TableCell sx={{ p: 0 }}>
+            <TableCell className="courses-training-table-cell">
               <Typography variant="caption">{o.title}</Typography>
             </TableCell>
-            <TableCell sx={{ p: 0 }}>
+            <TableCell className="courses-training-table-cell">
               <Typography variant="caption">{o.provider}</Typography>
             </TableCell>
-            <TableCell sx={{ p: 0 }}>
+            <TableCell className="courses-training-table-cell">
               <Typography variant="caption">{o.date}</Typography>
             </TableCell>
-            <TableCell sx={{ p: 0 }}>
+            <TableCell className="courses-training-table-cell">
               <Typography variant="caption">{o.duration}</Typography>
             </TableCell>
-            <TableCell sx={{ p: 0 }}>
+            <TableCell className="courses-training-table-cell">
               <Typography variant="caption">{o.certificate}</Typography>
             </TableCell>
           </TableRow>

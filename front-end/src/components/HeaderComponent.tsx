@@ -1,20 +1,16 @@
+import React from 'react';
 import { Box } from '@mui/material';
+import '../styles/header.css';
 
 const HeaderComponent = () => {
   return (
-    <Box sx={{mb:5, position: 'relative' }}>
-      <img src="/Header.png" alt="Header" width="100%" height="50px" />
+    <Box className="header-box">
+      <img src="/Header.png" alt="Header" className="header-img" />
       <Box
         component="img"
         src="/Logo.svg"
         alt="Logo"
-        sx={{
-          height: 50,
-          position: 'absolute',
-          left: '50px',
-          top: '50px',
-
-        }}
+        className="header-logo"
       />
     </Box>
   );

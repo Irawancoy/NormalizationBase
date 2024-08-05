@@ -1,4 +1,6 @@
+import React from 'react';
 import { Table, TableBody, TableCell, TableHead, TableRow, Typography } from '@mui/material';
+import '../styles/employmentTable.css'
 
 interface Employment {
   employer: string;
@@ -15,15 +17,15 @@ const EmploymentTableComponent: React.FC<EmploymentTableComponentProps> = ({ emp
   <Table size="small">
     <TableHead>
       <TableRow>
-        <TableCell sx={{ p: 0 }} />
-        <TableCell width="50" sx={{ p: 0 }}>
-          <Typography variant="caption">
-            <strong>From</strong>
+        <TableCell className="employment-table-cell" />
+        <TableCell className="employment-table-head-cell">
+          <Typography variant="caption" className="employment-table-cell-strong">
+            From
           </Typography>
         </TableCell>
-        <TableCell width="50" sx={{ p: 0 }}>
-          <Typography variant="caption">
-            <strong>To</strong>
+        <TableCell className="employment-table-head-cell">
+          <Typography variant="caption" className="employment-table-cell-strong">
+            To
           </Typography>
         </TableCell>
       </TableRow>
@@ -31,16 +33,18 @@ const EmploymentTableComponent: React.FC<EmploymentTableComponentProps> = ({ emp
     <TableBody>
       {employment.map((o, i) => (
         <TableRow key={i}>
-          <TableCell sx={{ p: 0 }}>
-            <Typography variant="body2">
-              <strong>{o.employer}</strong>
+          <TableCell className="employment-table-cell">
+            <Typography variant="body2" className="employment-table-cell-strong">
+              {o.employer}
             </Typography>
-            <Typography variant="caption">{o.position}</Typography>
+            <Typography variant="caption" className="employment-table-cell-caption">
+              {o.position}
+            </Typography>
           </TableCell>
-          <TableCell sx={{ p: 0 }}>
+          <TableCell className="employment-table-cell">
             <Typography variant="caption">{o.from}</Typography>
           </TableCell>
-          <TableCell sx={{ p: 0 }}>
+          <TableCell className="employment-table-cell">
             <Typography variant="caption">{o.to}</Typography>
           </TableCell>
         </TableRow>

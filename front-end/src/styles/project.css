@@ -1,0 +1,25 @@
+.projects-stack {
+   padding-top: 16px;
+ }
+ 
+ .project-item {
+   padding-top: 8px; 
+   padding-bottom: 24px; 
+ }
+ 
+ .project-chip {
+   flex-basis: 50px;
+ }
+ 
+ .project-table-cell {
+   padding: 0; 
+ }
+ 
+ .project-table-cell-width-100 {
+   width: 100px;
+ }
+ 
+ .project-table-cell-width-50 {
+   width: 50px;
+ }
+ 

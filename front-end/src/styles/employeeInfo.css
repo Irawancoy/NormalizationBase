@@ -1,0 +1,20 @@
+.employee-information-stack {
+   display: flex;
+   align-items: center;
+   gap: 16px; 
+ }
+ 
+ .employee-information-box {
+   flex-grow: 1;
+ }
+ 
+ .employee-information-name {
+   padding-top: 8px; 
+   padding-bottom: 8px;
+ }
+ 
+ .employee-information-avatar {
+   height: 150px;
+   width: 150px;
+ }
+ 

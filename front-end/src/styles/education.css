@@ -1,0 +1,13 @@
+.education-stack {
+   flex-basis: 50%;
+   padding-bottom: 16px; 
+ }
+ 
+ .education-typography {
+   padding-top: 8px; 
+ }
+ 
+ .education-table-cell {
+   padding: 0;
+ }
+ 
