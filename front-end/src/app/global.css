@@ -26,5 +26,28 @@
 }
 
 
+.container {
+  padding: 16px;
+}
+
+.headerSpacing {
+  padding-top: 8px;
+}
+
+.verticalDivider {
+  height: 100%;
+}
+
+.footerSpacing {
+  padding-top: 32px;
+}
+
+.captionText {
+  padding-top: 32px;
+  text-align: center;
+  color: gray;
+}
+
+
 
 
