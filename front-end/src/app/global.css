@@ -55,3 +55,8 @@
   bottom: 0;
   margin-bottom: -5px;
 }
+
+.page-header {
+  background-color: #f0f0f0; /* Warna sementara untuk debugging */
+  border: 1px solid red; /* Border sementara untuk debugging */
+}
